@@ -1,14 +1,40 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>С Днем Рождения</title>
 
+    <style>
 
-<head>
-  <title>Alexander Rezanov</title>
-</head>
+.block{
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    width: 50%;
+    margin: 0 auto;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+body {
 
-<body>
+    background-image: url(Image/Left.png), url(Image/Right.png), url(Image/Center.png);
+    background-position: left top, right top, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 0, 0, 0.91);
+}
+</style>
+  <body onload="init();">
+<div class="block">
+  <h1>
+    <center>С Днем Рождения!!!</center>
+  </h1>
+</div>
 
-<h1>it's Begin</h1>
-
-</body>
-
+  </body>
 </html>
